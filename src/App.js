@@ -10,6 +10,10 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Profile from './pages/Profile';
 import Navbar from './components/Navbar';
+import Information from './pages/Information';
+import InformationDetail from './pages/InformationDetail';
+import Agenda from './pages/Agenda';
+import AgendaDetail from './pages/AgendaDetail';
 import './App.css';
 
 function App() {
@@ -32,6 +36,10 @@ function App() {
             <Route path="/kompetensi/:id" element={<KompetensiDetail />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/informasi" element={<Information />} />
+            <Route path="/informasi/:id" element={<InformationDetail />} />
+            <Route path="/agenda" element={<Agenda />} />
+            <Route path="/agenda/:id" element={<AgendaDetail />} />
             <Route 
               path="/profile" 
               element={
